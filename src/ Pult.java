@@ -1,4 +1,3 @@
-
 package gorodenskiy.commande.graphics;
 
 import gorodenskiy.commande.Supervisor;
@@ -210,5 +209,7 @@ public class Pult extends JFrame {
 
     public void setTextOut(String textOut) {
         this.textOut = textOut;
+        String intext = pane.getText();
+        pane.setText(intext +"\n" + textOut);
     }
 }
